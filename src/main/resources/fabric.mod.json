@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "servercrashguard",
+  "version": "${version}",
+  "name": "Server Crash Guard",
+  "description": "Client-side validation and resource budgets for suspicious server packets.",
+  "authors": ["Server Crash Guard contributors"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "client": ["dev.servercrashguard.ServerCrashGuard"] },
+  "mixins": ["servercrashguard.mixins.json"],
+  "depends": { "fabricloader": ">=0.18.4", "minecraft": "1.21.11", "java": ">=21" }
+}
